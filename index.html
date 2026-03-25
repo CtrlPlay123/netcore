@@ -3,71 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="imagens/burger.png">
+    <title> Netcore </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="imagens/burger.png" alt="logo">
-
-        <nav class="menu">
-            <a href=""> Home </a>
-            <a href=""> Cardápio </a>
-            <a href=""> Contato </a>
-        </nav>
+        <img style="width: 256px;" src="logonetcore.png" alt="logo">
     </header>
 
-    <div class="cardapio">
-        <!-- 1° lanche -->
-        <div class="lanche">
-            <h2> nome do lanche </h2>
-            <img src="" alt="lanche">
-            <p> R$00,00</p>
-            <a href=""> Comprar </a>
+    <!-- Barra de busca -->
+    <input type="text" id="search" class="search-bar" placeholder="Buscar produtos...">
+
+    <div class="content" id="products">
+        <!-- Produto 1 -->
+        <div class="produto" data-price="3500">
+            <h2> Notebook Dell Inspiron </h2>
+            <img style="width:75%" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/15-3530-intel/media-gallery/black/notebook-inspiron-15-3530-nt-plastic-black-gallery-5.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=656&qlt=100,1&resMode=sharp2&size=656,402&chrss=full" alt="foto do produto">
+            <p> Descrição breve </p>
+
+            <label> Memória Ram </label>
+            <select name="ram">
+                <option value="8gb"> 8gb </option>
+                <option value="16gb"> 16gb </option>
+                <option value="32gb"> 32gb </option>
+            </select>
+
+            <label> Processador </label>
+            <select name="Processador">
+                <option value="Intel"> Intel </option>
+                <option value="AMD"> AMD </option>
+            </select>
+
+            <label> GPU </label>
+            <select name="GPU">
+                <option value="NVIDIA"> NVIDIA </option>
+                <option value="AMD"> AMD </option>
+            </select>
+
+            <p><strong>Preço: R$ 3500,00</strong></p>
+            <button type="button" class="add"> Comprar </button>
         </div>
 
-        <!-- 2° lanche -->
-        <div class="lanche">
-            <h2> nome do lanche </h2>
-            <img src="" alt="lanche">
-            <p> R$00,00</p>
-            <a href=""> Comprar </a>
+        <!-- Produto 2 -->
+        <div class="produto" data-price="7500">
+            <h2> MacBook Air </h2>
+            <img style="width:75%" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/15-3530-intel/media-gallery/black/notebook-inspiron-15-3530-nt-plastic-black-gallery-5.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=656&qlt=100,1&resMode=sharp2&size=656,402&chrss=full" alt="foto do produto">
+            <p> Descrição breve </p>
+
+            <label> Memória Ram </label>
+            <select name="ram">
+                <option value="8gb"> 8gb </option>
+                <option value="16gb"> 16gb </option>
+                <option value="32gb"> 32gb </option>
+            </select>
+
+            <label> Processador </label>
+            <select name="Processador">
+                <option value="Intel"> Intel </option>
+                <option value="AMD"> AMD </option>
+            </select>
+
+            <label> GPU </label>
+            <select name="GPU">
+                <option value="NVIDIA"> NVIDIA </option>
+                <option value="AMD"> AMD </option>
+            </select>
+
+            <p><strong>Preço: R$ 7500,00</strong></p>
+            <button type="button" class="add"> Comprar </button>
         </div>
 
-        <!-- 3° lanche -->
-        <div class="lanche">
-            <h2> nome do lanche </h2>
-            <img src="" alt="lanche">
-            <p> R$00,00</p>
-            <a href=""> Comprar </a>
-        </div>
+        <!-- Produto 3 -->
+        <div class="produto" data-price="4200">
+            <h2> Lenovo ThinkPad </h2>
+            <img style="width:75%" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/15-3530-intel/media-gallery/black/notebook-inspiron-15-3530-nt-plastic-black-gallery-5.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=656&qlt=100,1&resMode=sharp2&size=656,402&chrss=full" alt="foto do produto">
+            <p> Descrição breve </p>
 
-        <!-- 4° lanche -->
-        <div class="lanche">
-            <h2> nome do lanche </h2>
-            <img src="" alt="lanche">
-            <p> R$00,00</p>
-            <a href=""> Comprar </a>
-        </div>
+            <label> Memória Ram </label>
+            <select name="ram">
+                <option value="8gb"> 8gb </option>
+                <option value="16gb"> 16gb </option>
+                <option value="32gb"> 32gb </option>
+            </select>
 
-        <!-- 5° lanche -->
-        <div class="lanche">
-            <h2> nome do lanche </h2>
-            <img src="" alt="lanche">
-            <p> R$00,00</p>
-            <a href=""> Comprar </a>
-        </div>
+            <label> Processador </label>
+            <select name="Processador">
+                <option value="Intel"> Intel </option>
+                <option value="AMD"> AMD </option>
+            </select>
 
-        <!-- 6° lanche -->
-        <div class="lanche">
-            <h2> nome do lanche </h2>
-            <img src="" alt="lanche">
-            <p> R$00,00</p>
-            <a href=""> Comprar </a>
-        </div>
+            <label> GPU </label>
+            <select name="GPU">
+                <option value="NVIDIA"> NVIDIA </option>
+                <option value="AMD"> AMD </option>
+            </select>
 
+            <p><strong>Preço: R$ 4200,00</strong></p>
+            <button type="button" class="add"> Comprar </button>
+        </div>
     </div>
 
+    <!-- Carrinho -->
+    <h2>Carrinho</h2>
+    <ul id="cart" class="cart"></ul>
+    <h3>Total: R$ <span id="total">0</span></h3>
+    <button id="checkout" class="btn">Finalizar Compra</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
